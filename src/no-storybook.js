@@ -1,5 +1,5 @@
 const storybook = () => {
-  function decorator() {
+  return function decorator() {
     return;
   }
 }
