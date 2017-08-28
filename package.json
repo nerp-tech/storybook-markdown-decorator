@@ -1,7 +1,7 @@
 {
   "name": "storybook-markdown-decorator",
   "description": "Decorator for quickly using Markdown to annotate your React components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/idmontie/storybook-markdown-decorator",
   "author": "Ivan Montiel",

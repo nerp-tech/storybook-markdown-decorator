@@ -8,31 +8,31 @@ const storybook = (...args) => {
     const { default: injectJS } = require('./injectJS');
     const { default: Markdown } = require('./Markdown');
 
-    let docs = '';
-    let title = Target.name;
-    let name = 'default';
-    let example = null;
-
-    switch (args.length) {
-      case 1:
-        docs = args[0];
-      case 2:
-        name = args[0];
-        docs = args[1];
-      case 3:
-        name = args[0];
-        docs = args[1];
-        example = args[2]();
-      case 4:
-        title = args[0];
-        name = args[1];
-        docs = args[2];
-        example = args[3]();
-      default:
-        return;
-    }
-
     return function decorator(Target) {
+      let docs = '';
+      let title = Target.name;
+      let name = 'default';
+      let example = null;
+
+      switch (args.length) {
+        case 1:
+          docs = args[0];
+        case 2:
+          name = args[0];
+          docs = args[1];
+        case 3:
+          name = args[0];
+          docs = args[1];
+          example = args[2]();
+        case 4:
+          title = args[0];
+          name = args[1];
+          docs = args[2];
+          example = args[3]();
+        default:
+          return;
+      }
+
       window.__linkTo = linkTo;
       injectCSS();
       injectJS();
@@ -45,7 +45,9 @@ const storybook = (...args) => {
           </div>
         ));
       }
-  };
+  } else {
+      return () => {};
+  }
 }
 
 export default storybook;
