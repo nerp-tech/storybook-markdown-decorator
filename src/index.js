@@ -17,18 +17,22 @@ const storybook = (...args) => {
       switch (args.length) {
         case 1:
           docs = args[0];
+          break;
         case 2:
           name = args[0];
           docs = args[1];
+          break;
         case 3:
           name = args[0];
           docs = args[1];
           example = args[2]();
+          break;
         case 4:
           title = args[0];
           name = args[1];
           docs = args[2];
           example = args[3]();
+          break;
         default:
           return;
       }
