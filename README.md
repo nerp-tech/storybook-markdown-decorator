@@ -19,6 +19,7 @@ Then add the following to you `.babelrc` file:
 The following function signatures are available:
 
 ```jsx
+@storybook(title[String], name [String], description [String], reactExample [Function])
 @storybook(name [String], description [String], reactExample [Function])
 @storybook(name [String], description [String])
 @storybook(description [String])
