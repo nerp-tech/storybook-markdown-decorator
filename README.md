@@ -14,6 +14,14 @@ Then add the following to you `.babelrc` file:
 ]
 ```
 
+You'll probably want to add the following alias for your non-storybook webpack:
+
+```
+{
+  'storybook-markdown-decorator': 'storybook-markdown-decorator/dist/no-storybook'
+}
+```
+
 ## Usage
 
 The following function signatures are available:
