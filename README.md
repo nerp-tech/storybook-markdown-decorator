@@ -3,7 +3,7 @@
 ## Getting Started
 
 ```
-yarn add --dev storybook-markdown-decorator babel-plugin-transform-decorators-legacy
+yarn add --dev storybook-markdown-decorator babel-plugin-transform-decorators-legacy react-markdown
 ```
 
 Then add the following to you `.babelrc` file:
